@@ -1,0 +1,28 @@
+body{
+    margin: 5px;
+}
+
+div{
+    display: grid;
+    gap:0.7rem;
+    object-fit:cover;
+}
+img{
+    width:100%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:768px){
+    .gallarey{
+       grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:1024px){
+    .gallarey{
+       grid-template-columns: repeat(3,1fr);
+    }
+    img:nth-of-type(3){
+        grid-column: 2/ span 2;
+        grid-row: 1/span 2;
+    }
+}

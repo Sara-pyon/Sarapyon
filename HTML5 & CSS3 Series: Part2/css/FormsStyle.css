@@ -1,0 +1,31 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    padding: 1rem;
+}
+label{
+    display: block;
+}
+input[type='text'],
+input[type='e-mail']{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+input[type='e-mail']:focus,
+input[type='text']:focus{
+    border-color: dodgerblue;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(24,177,255,0.25);
+}
+button{
+    background: #0d6efd;
+    color: #fff;
+    border: 0;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+}
+.form-group{
+    margin-bottom: 1rem;
+}

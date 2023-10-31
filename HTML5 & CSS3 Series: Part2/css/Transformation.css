@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    background: orange;
+    width: 100px;
+    margin-bottom: 5rem;
+}
+.box-1{
+    background: orange;
+    width: 100px;
+}
+.container{
+    perspective: 200px;
+}
+.container:hover .box{
+    transform: rotateY(45deg);
+    transform-origin: 0 50%;
+}
+.container:hover .box-special{
+    transform: rotatex(45deg);
+}

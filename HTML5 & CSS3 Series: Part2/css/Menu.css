@@ -1,0 +1,37 @@
+html{
+    font-size: 62.5%;
+}
+.menu{
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+ul{
+    list-style: none;
+    padding-left:0px;
+}
+.menu li{
+    padding: 1.3rem;
+}
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu .fas{
+    width: 2rem;
+    padding-left: 0.5rem;
+}
+li a{
+    padding:0.5rem;
+}
+li:hover, li.active{
+    background-color: bisque;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .menu{
+        width:20rem;
+        height:100vh;
+    }
+}

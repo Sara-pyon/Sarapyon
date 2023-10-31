@@ -1,0 +1,43 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    color: #333;
+    font-size: 1.8rem;
+    font-family:'Open Sans', sans-serif;
+    padding:2rem;
+    line-height: 1.5;
+}
+img{
+    width:100%;
+}
+h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.1;
+}
+h1{
+    font-size: 3.052em;
+}
+h2{
+    font-size: 2.441em;
+}
+h3{
+    font-size: 1.953em;
+}
+h4{
+    font-size: 1.563em;
+}
+h5{
+    font-family:'Playfair Display', serif;
+    font-size: 1.25em;
+}
+h6{
+    font-size: 1em;
+}
+ol li{
+    margin-bottom: 1.8rem ;
+}
+.container{
+    max-width: 1140px;
+    margin:0 auto;
+}

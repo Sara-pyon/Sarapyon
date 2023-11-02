@@ -241,7 +241,7 @@ a{
     }
 }
 
-/*Crad*/
+/*Card*/
 .card{
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
@@ -315,7 +315,6 @@ a{
     }
     .plan__discription{
         font-size: 1.7rem;
-    }
-
-    
+    }   
 }
+

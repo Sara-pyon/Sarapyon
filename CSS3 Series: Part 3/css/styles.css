@@ -318,3 +318,20 @@ a{
     }   
 }
 
+/*Media*/
+.media{
+    display: flex;
+}
+.media__title{
+    margin-top: 0;
+    font-size: 2.4rem;
+}
+.media__body{
+    margin: 0 2rem;
+    font-size: 2.0rem;
+}
+.media__image{
+    margin-top: 1rem;
+}
+
+

@@ -530,3 +530,55 @@ a{
     max-width: 1140px;
     margin: 0 auto;
  }
+
+ /* navigation */
+ .nav{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+    align-items: center;
+ }
+ .nav__list{
+    width: 100%;
+    margin: 0;
+ }
+ .nav__item > a{
+    color: #d2d0db;
+    padding: 0 2rem;
+ }
+ .nav__item > a:hover{
+    color: #fff;
+ }
+ .nav__toggler{
+    opacity: 0.5;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+ }
+ .nav.collapsible__expanded .nav__toggler{
+    opacity: 1;
+    box-shadow: 0 0 0 3px #7b8587;
+    border-radius: 5px;
+ }
+ /* アイコンを手動で調節 */
+ .nav__brand{
+    transform: translateY(5px);
+ }
+ @media screen and (min-width: 771px) {
+        .nav__toggler{
+            display: none;
+        }
+        .nav__list{
+            width: auto;
+            display: flex;
+            max-height: 100%;
+            opacity: 1;
+        }
+        .nav__item{
+            font-size: 1.6rem;
+            border: 0;
+        }
+
+ }
+ 

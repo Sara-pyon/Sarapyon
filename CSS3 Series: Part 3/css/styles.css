@@ -671,3 +671,28 @@ a{
     margin: 0 auto;
 }
 
+/* feature */
+.feature{
+    gap: 6rem;
+    align-items: center ;
+    margin: 12rem 0;
+}
+.feature__header{
+    margin: 0 auto;
+}
+.feature__heading{
+    margin: 1rem 0;
+}
+.feature__image{
+    width: 100%;
+}
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+
+@media screen and (min-width:771px) {
+    .feature:nth-of-type(even) .fearure__content{
+        order:2;
+    }
+}
+

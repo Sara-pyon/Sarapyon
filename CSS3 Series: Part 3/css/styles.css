@@ -185,7 +185,7 @@ a{
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     margin: 1rem 0;
     text-transform: uppercase;
     white-space: nowrap;
@@ -330,9 +330,6 @@ a{
 .card .btn{
     padding:0.5rem 3rem;
 }
-.plan--popular{
-    transform: scale(1.1);
-}
 .plan--popular .card__header{
     position:relative;
 }
@@ -364,6 +361,9 @@ a{
     .plan__discription{
         font-size: 1.7rem;
     }   
+    .plan--popular{
+        transform: scale(1.1);
+    }
 }
 
 /*Media*/
@@ -429,17 +429,21 @@ a{
     .grid--1x2{
         grid-template-columns: repeat(2, 1fr);
     }
-    .grid--1x3{
-        grid-template-columns: repeat(3,1fr);
-    }
+    
     .grid--3x1{
         grid-template-rows: repeat(3,1fr);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .grid--1x3{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
 /* Testimonial */
 .testimonial{
     padding: 3rem;
+    margin: 3rem;
 }
 .testimonial__image{
     position: relative;
@@ -452,6 +456,7 @@ a{
     top: 3rem;
     right: -32px;
 }
+
 @media screen and (min-width: 771px) {
     .testimonial .quote__text,
     .testimonial .quote__author{
@@ -467,6 +472,15 @@ a{
     }
     .testimonial__image{
         margin: 0 30px;
+    }
+    .quote__text{
+        font-size: 2.3rem;
+    }
+    .quote__author{
+        font-size: 2.0rem;
+    }
+    .quote__company{
+        font-size: 2.0rem;
     }
 }
 
@@ -550,6 +564,7 @@ a{
     background: #000;
     color: #7b8587;
  }
+ 
  .block--black .block__heading{
     color: #fff;
  }
@@ -567,7 +582,7 @@ a{
  }
 
  .block--black h1,
- .block--black h2
+ .block--black h2,
  .block--black h3{
     color: #fff;
  }
@@ -586,8 +601,11 @@ a{
     margin: 0;
  }
  .nav__item{
-    border-bottom: 1px solid #696969;
-    
+    border-bottom: 1px solid #393939;
+    padding: 0.5rem 0;
+ }
+ .nav__item:last-of-type{
+    border: 0;
  }
  .nav__item > a{
     color: #d2d0db;
@@ -661,8 +679,9 @@ a{
     font-size: 2.2rem;
 }
 .block-domain__prices{
+    color: var(--color-heading);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2.0rem;
     font-weight: 600;

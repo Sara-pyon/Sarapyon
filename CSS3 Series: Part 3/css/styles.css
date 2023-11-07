@@ -14,6 +14,10 @@
 }
 
 /*Typografy*/
+::selection{
+    background: var(--color-primary);
+    color: #fff;
+}
 html{
     font-size: 62.5%;
 }
@@ -39,6 +43,7 @@ h2{
 }
 h3{
     font-size: 3rem;
+    font-weight: 600;
 }
 p{
     margin-top: 0;
@@ -118,7 +123,6 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-    color: var(--color-heading);
 }
 .list--inline .list__item {
     display: inline-block;
@@ -127,6 +131,7 @@ a{
 .list--tick{
     list-style-image: url(../image/tick.svg);
     padding-left: 3rem;
+    color: var(--color-heading);
 }
 /*list--tickがつくときのlist__itemのpaddingを変えたいので、二つを指定しないといけない。しなければinlineの時にもつく*/
 .list--tick .list__item{
@@ -361,6 +366,7 @@ a{
 /*Media*/
 .media{
     display: flex;
+    margin-bottom: 4rem;
 }
 .media__title{
     margin-top: 0;
@@ -416,12 +422,15 @@ a{
 .grid{
     display: grid;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 771px) {
     .grid--1x2{
         grid-template-columns: repeat(2, 1fr);
     }
     .grid--1x3{
         grid-template-columns: repeat(3,1fr);
+    }
+    .grid--3x1{
+        grid-template-rows: repeat(3,1fr);
     }
 }
 
@@ -555,6 +564,10 @@ a{
  .container{
     max-width: 1140px;
     margin: 0 auto;
+ }
+
+ .block--black h1,h2,h3{
+    color: #fff;
  }
 
  /* navigation */
@@ -696,3 +709,36 @@ a{
     }
 }
 
+/* Showcase */
+.block-showcase .block__heading{
+    margin-bottom: 4rem;
+}
+.block-showcase{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+}
+.block-showcase__image > img{
+    width: 100%;
+}
+.block-showcase .media__title{
+    font-size: 2.4rem;
+}
+.block-showcase .media__content{
+    font-size: 2.2rem;
+}
+.block-showcase .media__image{
+    margin-top: 0.2rem;
+}
+
+@media screen and (min-width:771px) {
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .block-showcase__image{
+        justify-self: end;
+    }
+    .block-showcase__image >img{
+        width: auto;
+        max-width: 700px;
+    }
+    
+}
